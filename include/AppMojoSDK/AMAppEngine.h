@@ -10,6 +10,6 @@
 
 @interface AMAppEngine : NSObject
 
-+ (void) startWithAppleID: (NSString *) appID appSecret: (NSString *) appSecret;
++ (void) startWithAppID: (NSString *) appID appSecret: (NSString *) appSecret;
 
 @end
