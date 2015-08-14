@@ -15,4 +15,12 @@ typedef NS_ENUM(NSInteger, AMGender) {
     kAMGenderFemale
 };
 
+typedef NS_ENUM(NSInteger, AMAdNetwork) {
+    kAMAdNetworkUnknown,
+    kAMAdNetworkAdmob,
+    kAMAdNetworkFacebook,
+    kAMAdNetworkAmazon,
+    kAMAdNetworkMopub
+};
+
 #endif

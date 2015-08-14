@@ -10,6 +10,11 @@
 #import <UIKit/UIKit.h>
 
 
+@protocol AMSizeDelegate <NSObject>
+- (BOOL) shouldCheckValidSize;
+@end
+
+
 #pragma mark - Standard Sizes
 
 extern CGFloat const kAMAdSizeUnspecified;

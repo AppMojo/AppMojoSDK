@@ -14,14 +14,21 @@
 
 @interface AMAdRequest : NSObject
 
+/**
+ * Test Ads will be returned for devices with device IDs specified in this array.
+ */
 @property (nonatomic, strong) NSArray *testDevices;           // device IDs for testing on AdMob
 @property (nonatomic, strong) NSDate *birthday;
 @property (nonatomic, assign) AMGender gender;
 @property (nonatomic, copy) NSString *requestAgent;
 
 @property (nonatomic, strong) CLLocation *location;
-@property (nonatomic, copy) NSString *locationDescription; // This value can be used as a location description for AdMob Request
 
+/**
+ * Set this proproty to YES if you want a test Ads present on Simulator, instead of actual Ads;
+ * otherwise, the actual Ads will be presented.
+ * The default value is NO
+ */
 @property (nonatomic, assign, getter= isTestOnSimulator) BOOL testOnSimulator;
 
 @end

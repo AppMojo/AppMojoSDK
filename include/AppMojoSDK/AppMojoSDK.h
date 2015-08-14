@@ -13,11 +13,16 @@
 #error The AppMojo SDK requires a deployment target of iOS 7.0 or later.
 #endif
 
-
+/**
+ * These are the class that user can play with
+ */
 #import "AMSize.h"
 #import "AMBannerView.h"
 #import "AMBannerDelegate.h"
 #import "AMAdRequest.h"
 #import "AMAppEngine.h"
-
+#import "AMError.h"
+#import "AMTypes.h"
+#import "AMDelegate.h"
+#import "AMAdProtocol.h"
 

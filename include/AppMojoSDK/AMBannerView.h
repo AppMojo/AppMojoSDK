@@ -11,7 +11,6 @@
 
 #import "AMAdProtocol.h"
 #import "AMBannerDelegate.h"
-#import "AMDelegate.h"
 
 
 @interface AMBannerView : UIView <AMAdProtocol>
@@ -20,6 +19,8 @@
 #pragma mark - AMAdProtocol
 
 @property (nonatomic, weak) id<AMBannerDelegate> delegate;
+
+@property (nonatomic, copy) IBInspectable NSString *placementID;
 
 - (void) loadAd: (AMAdRequest *) adRequest;
 - (void) reloadAd;
@@ -34,6 +35,9 @@
 
 @property (nonatomic, weak) UIViewController *rootViewController;   // The root view controller to be presented on
 
+/**
+ * Origin default is (0,0)
+ */
 - (instancetype) initWithSize: (CGSize) size;
 - (instancetype) initWithSize: (CGSize) size origin: (CGPoint) origin;
 

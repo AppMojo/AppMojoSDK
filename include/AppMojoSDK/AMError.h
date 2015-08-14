@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AMError : NSError
+@interface AMError : NSObject
+
+@property (nonatomic, strong) id error;
 
 @end

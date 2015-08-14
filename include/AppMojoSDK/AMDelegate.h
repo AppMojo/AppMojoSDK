@@ -9,12 +9,12 @@
 #ifndef AppMojoSDK_AMListener_h
 #define AppMojoSDK_AMListener_h
 
-
-#import "AMAdProtocol.h"
-#import "AMError.h"
-
+@class AMBanner;
 
 @protocol AMDelegate <NSObject>
+
+@optional
+- (void) amAdConfigNotExist: (NSString *) placementID;
 
 @end
 

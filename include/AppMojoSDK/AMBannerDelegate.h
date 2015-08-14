@@ -13,6 +13,7 @@
 
 
 @class AMBannerView;
+@class AMError;
 
 
 @protocol AMBannerDelegate <AMDelegate>
