@@ -16,6 +16,6 @@
 /*
  * This property is required by GADBannerView (AdMob SDK)
  */
-@property (nonatomic, assign) UIViewController *rootViewControler;
+@property (nonatomic, weak) UIViewController *rootViewControler;
 
 @end
