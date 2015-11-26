@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'AppMojoSDK'
-  s.version      = '0.0.2-alpha.3'
+  s.version      = '0.0.2-alpha.4'
   s.authors      = 'AppMojo'
 
   s.license      = { :type => 'Copyright', :text => 'Copyright 2015 AppMojo. All Rights Reserved' } 
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.summary      = 'AppMojo SDK is a platform that helps app developers maximize their ad revenues while preserving user experience.'
 
   s.platform     = :ios, "7.0"  
-  s.source       = { :git => "https://github.com/AppMojo/AppMojoSDK.git", :tag => "0.0.2-alpha.3" }
+  s.source       = { :git => "https://github.com/AppMojo/AppMojoSDK.git", :tag => "0.0.2-alpha.4" }
 
   s.source_files          = "include/AppMojoSDK/*.h"
   s.public_header_files   = "include/AppMojoSDK/*.h"

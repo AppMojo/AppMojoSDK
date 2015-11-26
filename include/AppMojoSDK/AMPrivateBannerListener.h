@@ -2,16 +2,16 @@
 //  AMPrivateBannerListener.h
 //  AppMojoSDK
 //
-//  Created by appsynth on 7/2/15.
-//  Copyright (c) 2015 Appsynth. All rights reserved.
+//  Created by AppMojo on 7/2/15.
+//  Copyright (c) 2015 AppMojo. All rights reserved.
 //
 
 #ifndef AppMojoSDK_AMPrivateBannerListener_h
 #define AppMojoSDK_AMPrivateBannerListener_h
 
 
-#import "AMBannerAdapter.h"
-#import "AMError.h"
+@class AMBannerAdapter;
+@class AMError;
 
 
 @protocol AMPrivateBannerListener <NSObject>
@@ -19,7 +19,7 @@
 /*
  * load
  */
-- (void) amBannerDidReceiveAd: (AMBannerAdapter *) banner;
+- (void) amBannerDidReceiveAd: (AMBannerAdapter *) bannerAdapter;
 
 /*
  * fail
@@ -29,22 +29,22 @@
 /*
  * open
  */
-- (void) amBannerWillPresentScreen:(AMBannerAdapter *) banner;
+- (void) amBannerWillPresentScreen:(AMBannerAdapter *) bannerAdapter;
 
 /*
  * will close
  */
-- (void) amBannerWillDismissScreen:(AMBannerAdapter *) banner;
+- (void) amBannerWillDismissScreen:(AMBannerAdapter *) bannerAdapter;
 
 /*
  * close
  */
-- (void) amBannerDidDismissScreen:(AMBannerAdapter *) banner;
+- (void) amBannerDidDismissScreen:(AMBannerAdapter *) bannerAdapter;
 
 /*
  * left application
  */
-- (void) amBannerWillLeaveAppication:(AMBannerAdapter *) banner;
+- (void) amBannerWillLeaveAppication:(AMBannerAdapter *) bannerAdapter;
 
 @end
 

@@ -2,8 +2,8 @@
 //  AMBannerView.h
 //  AppMojoSDK
 //
-//  Created by appsynth on 7/3/15.
-//  Copyright (c) 2015 Appsynth. All rights reserved.
+//  Created by AppMojo on 7/3/15.
+//  Copyright (c) 2015 AppMojo. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -19,7 +19,6 @@
 #pragma mark - AMAdProtocol
 
 @property (nonatomic, weak) id<AMBannerDelegate> delegate;
-
 @property (nonatomic, copy) IBInspectable NSString *placementID;
 
 - (void) loadAd: (AMAdRequest *) adRequest;
@@ -31,9 +30,15 @@
 
 @property (nonatomic, assign) CGSize size;
 
-//@property (nonatomic, assign) CGPoint origin;                       // Origin of banner referred to its superview
+/*
+ * Origin of banner referred to its superview
+ */
+//@property (nonatomic, assign) CGPoint origin;
 
-@property (nonatomic, weak) UIViewController *rootViewController;   // The root view controller to be presented on
+/*
+ * The root view controller to be presented on
+ */
+@property (nonatomic, weak) UIViewController *rootViewController;
 
 /**
  * Origin default is (0,0)

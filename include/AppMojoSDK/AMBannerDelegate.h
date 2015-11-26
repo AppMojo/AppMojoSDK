@@ -2,8 +2,8 @@
 //  AMBannerListener.h
 //  AppMojoSDK
 //
-//  Created by appsynth on 7/3/15.
-//  Copyright (c) 2015 Appsynth. All rights reserved.
+//  Created by AppMojo on 7/3/15.
+//  Copyright (c) 2015 AppMojo. All rights reserved.
 //
 
 #ifndef AppMojoSDK_AMBannerListener_h
@@ -19,17 +19,17 @@
 @protocol AMBannerDelegate <AMDelegate>
 
 @optional
-- (void) amAdDidReceiveAd: (AMBannerView *) bannerView;
+- (void) amAdDidReceiveAd: (AMBannerView *) banner;
 
-- (void) amAd: (AMBannerView *) ad didFailToReceiveAdWithError: (AMError *) error;
+- (void) amAd: (AMBannerView *) banner didFailToReceiveAdWithError: (AMError *) error;
 
-- (void) amAdWillPresentScreen: (AMBannerView *) ad;
+- (void) amAdWillPresentScreen: (AMBannerView *) banner;
 
-- (void) amAdWillDismissScreen: (AMBannerView *) ad;
+- (void) amAdWillDismissScreen: (AMBannerView *) banner;
 
-- (void) amAdDidDismissScreen: (AMBannerView *) ad;
+- (void) amAdDidDismissScreen: (AMBannerView *) banner;
 
-- (void) amAdWillLeaveAppication: (AMBannerView *) ad;
+- (void) amAdWillLeaveAppication: (AMBannerView *) banner;
 
 @end
 
