@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'AppMojoSDK'
-  s.version      = '0.0.2-alpha.4'
+  s.version      = '0.0.2-alpha.5'
   s.authors      = 'AppMojo'
 
   s.license      = { :type => 'Copyright', :text => 'Copyright 2015 AppMojo. All Rights Reserved' } 
